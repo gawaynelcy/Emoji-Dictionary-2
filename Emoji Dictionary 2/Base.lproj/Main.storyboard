@@ -58,31 +58,49 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A map of the World!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJO-J7-EII">
-                                <rect key="frame" x="10" y="636" width="355" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A map of the World!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJO-J7-EII">
+                                <rect key="frame" x="50" y="418" width="275" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emoji Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TgR-CP-oFY">
+                                <rect key="frame" x="139.5" y="88" width="96" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqZ-CW-1CK">
+                                <rect key="frame" x="146" y="117" width="82.5" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="uG6-Jt-zFj" firstAttribute="trailing" secondItem="QJO-J7-EII" secondAttribute="trailing" constant="50" id="7wf-vb-vs8"/>
                             <constraint firstItem="x3D-O5-T7f" firstAttribute="top" secondItem="uG6-Jt-zFj" secondAttribute="top" constant="100" id="AG0-ex-flv"/>
-                            <constraint firstItem="QJO-J7-EII" firstAttribute="leading" secondItem="uG6-Jt-zFj" secondAttribute="leading" constant="10" id="IFb-Jk-mh3"/>
-                            <constraint firstItem="uG6-Jt-zFj" firstAttribute="trailing" secondItem="QJO-J7-EII" secondAttribute="trailing" constant="10" id="Nhh-GN-rbf"/>
-                            <constraint firstItem="uG6-Jt-zFj" firstAttribute="bottom" secondItem="QJO-J7-EII" secondAttribute="bottom" constant="10" id="g6f-ec-Y7b"/>
+                            <constraint firstItem="QJO-J7-EII" firstAttribute="centerX" secondItem="2E6-av-YeY" secondAttribute="centerX" id="HHT-9C-Gga"/>
+                            <constraint firstItem="x3D-O5-T7f" firstAttribute="top" secondItem="hqZ-CW-1CK" secondAttribute="bottom" constant="5" id="OMs-pA-VPc"/>
+                            <constraint firstItem="TgR-CP-oFY" firstAttribute="centerX" secondItem="2E6-av-YeY" secondAttribute="centerX" id="SyV-cf-aWK"/>
+                            <constraint firstItem="QJO-J7-EII" firstAttribute="top" secondItem="x3D-O5-T7f" secondAttribute="bottom" constant="15" id="cwY-4h-mCF"/>
+                            <constraint firstItem="x3D-O5-T7f" firstAttribute="top" secondItem="TgR-CP-oFY" secondAttribute="bottom" constant="55" id="jE4-gr-1lT"/>
+                            <constraint firstItem="QJO-J7-EII" firstAttribute="leading" secondItem="uG6-Jt-zFj" secondAttribute="leading" constant="50" id="jxb-54-UlL"/>
                             <constraint firstItem="x3D-O5-T7f" firstAttribute="centerX" secondItem="2E6-av-YeY" secondAttribute="centerX" id="nr5-oV-PUh"/>
+                            <constraint firstItem="hqZ-CW-1CK" firstAttribute="centerX" secondItem="2E6-av-YeY" secondAttribute="centerX" id="wc6-BE-3Jx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uG6-Jt-zFj"/>
                     </view>
                     <connections>
                         <outlet property="emojiDefinitionLabel" destination="QJO-J7-EII" id="b2d-BK-yGa"/>
                         <outlet property="emojiLabel" destination="x3D-O5-T7f" id="OWP-vN-FoD"/>
+                        <outlet property="emojiName" destination="hqZ-CW-1CK" id="8Kg-ER-DPc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aMH-6d-fsu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1074" y="77"/>
+            <point key="canvasLocation" x="1072.8" y="76.911544227886068"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BtZ-I3-fMv">
